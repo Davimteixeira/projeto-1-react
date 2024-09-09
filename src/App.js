@@ -31,7 +31,7 @@ class App extends Component {
   }
 
   componentDidUpdate() {
-    this.handleTimeout();
+    // this.handleTimeout();
   }
 
   componentWillUnmount() {
@@ -40,7 +40,7 @@ class App extends Component {
 
   handleTimeout = () => {
     const { posts, counter } = this.state;
-    posts[0].title = 'O título mudou';
+    posts[0].title = 'O título mudou ';
 
     this.timeoutUpdate = setTimeout(() => {
       this.setState({ posts, counter: counter + 1 });
